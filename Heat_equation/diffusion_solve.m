@@ -5,6 +5,7 @@
 %coefficient D, (iv) boundary condition specification BC &
 %(v) initial condition specification IC.
 %I do so using MATLAB's pdepe.
+%Run the accompanying file diffusion_1D_solve.m for solution.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [soln] = diffusion_solve( x , t , D , BC , IC)
@@ -54,7 +55,10 @@ function [soln] = diffusion_solve( x , t , D , BC , IC)
             value = ones(1,length(x));
         elseif IC == 2
             value = exp(-(x-0.5).^2*100);
+        elseif IC == 3
+            value = 2 + sin(30*x) + sin(7000*x)/2 + sin(8000*x)/3;
         end
+  
     end
 
     diff_functions = diff_funs1; %calling the functions defined above
