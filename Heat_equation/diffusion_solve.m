@@ -56,7 +56,7 @@ function [soln] = diffusion_solve( x , t , D , BC , IC)
         elseif IC == 2
             value = exp(-(x-0.5).^2*100);
         elseif IC == 3
-            value = 2 + sin(30*x) + sin(7000*x)/2 + sin(8000*x)/3;
+            value = 2 + sin(30*x)/2 + sin(140*x)/2 + sin(160*x)/3 + sin(535*x)/3;
         end
   
     end
