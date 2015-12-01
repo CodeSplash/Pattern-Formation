@@ -6,7 +6,7 @@
 %integrates from time t0 to time t1 with inital condition vector
 %[y1(0) y2(0) y3(0) y4(0)].
 
-[T,Y] = ode15s(@(t,y) fun2cell(t,y),[0 60],rand(1,4));
+[T,Y] = ode15s(@(t,y) fun2cell(t,y),[0 60],[1 1 1 1]);
 
 %Here we plot morphogen concentrations as a function of time t.
 
