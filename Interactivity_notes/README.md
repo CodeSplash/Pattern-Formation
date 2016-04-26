@@ -1,1 +1,3 @@
-This will be a growing collection of intereactive Python plots.	
+This will be a growing collection of interactive Python plots.
+
+Note: interactive_plot1.py is NOT interactive.
